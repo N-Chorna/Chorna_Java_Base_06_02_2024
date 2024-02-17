@@ -1,4 +1,4 @@
-package ua.hillel.chorna.lessons.lesson4;
+package ua.hillel.chorna.lessons.lesson4.HW4;
 
 public class CuboidHW {
     public static void main(String[] args) {
