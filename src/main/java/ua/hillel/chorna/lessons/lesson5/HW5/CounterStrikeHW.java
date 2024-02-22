@@ -93,11 +93,11 @@ public class CounterStrikeHW {
             System.out.println("Wrong data. Please enter a whole number");
             System.exit(0);
         }
-        int team1Average = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1) / 5;
+        double team1Average = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1) / 5D;
         System.out.println("Team 1 average score - " + team1Average);
-        int team2Average = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2) / 5;
+        double team2Average = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2) / 5D;
         System.out.println("Team 2 average score - " + team2Average);
-        int winningTeam = (Math.max(team1Average, team2Average));
+        double winningTeam = ( Math.max(team1Average, team2Average));
         if (team1Average > team2Average) {
             System.out.println("Team " + firstTeam + " is the WINNER. It scored " + team1Average);
         } else if (team2Average > team1Average) {
