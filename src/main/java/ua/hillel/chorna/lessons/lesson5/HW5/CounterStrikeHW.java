@@ -2,7 +2,7 @@ package ua.hillel.chorna.lessons.lesson5.HW5;
 
 import java.util.Scanner;
 
-public class SandBox {
+public class CounterStrikeHW {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the name of the first team");
@@ -98,7 +98,11 @@ public class SandBox {
         int team2Average = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2) / 5;
         System.out.println("Team 2 average score - " + team2Average);
         int winningTeam = (Math.max(team1Average, team2Average));
-        System.out.println("The WINNER scored " + winningTeam);
-
+        if (team1Average > team2Average) {
+            System.out.println("Team 1 is the WINNER");
+        } else if (team2Average > team1Average) {
+            System.out.println("Team 2 is the WINNER");
+        } else
+            System.out.println("Draw");
     }
 }

@@ -122,7 +122,7 @@ public class LogicalOps {
 
         Scanner sc3 = new Scanner(System.in);
         System.out.println("Please enter an integer");
-        int userValue3 = sc.nextInt(); // проблема з \n
+        int userValue3 = sc3.nextInt(); // проблема з \n
         // scanner.nextLine(); - використати, щоб очистити буфер, коли після Integer нам потрібно друкувати String
         System.out.println("The string = " + userValue3);
 
