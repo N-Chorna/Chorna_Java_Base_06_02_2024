@@ -99,9 +99,9 @@ public class CounterStrikeHW {
         System.out.println("Team 2 average score - " + team2Average);
         int winningTeam = (Math.max(team1Average, team2Average));
         if (team1Average > team2Average) {
-            System.out.println("Team 1 is the WINNER");
+            System.out.println("Team " + firstTeam + " is the WINNER. It scored " + team1Average);
         } else if (team2Average > team1Average) {
-            System.out.println("Team 2 is the WINNER");
+            System.out.println("Team " + secondTeam + " is the WINNER. It scored " + team2Average);
         } else
             System.out.println("Draw");
     }
