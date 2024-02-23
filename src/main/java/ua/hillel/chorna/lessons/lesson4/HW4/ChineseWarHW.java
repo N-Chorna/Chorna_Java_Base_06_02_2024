@@ -13,8 +13,8 @@ public class ChineseWarHW {
         int armyLee = 860;
         int armyMing = armyLee + armyLee/2;
 
-        int LeeATK = (warriorLeeATK * armyLee) + (archerLeeATK * armyLee) + (riderLeeATK * armyLee);
-        int MingATK = (warriorMingATK * armyMing) + (archerMingATK * armyMing) + (riderMingATK * armyMing);
+        int LeeATK = (warriorLeeATK + archerLeeATK + riderLeeATK) * armyLee;
+        int MingATK = (warriorMingATK + archerMingATK + riderMingATK) * armyMing;
 
         System.out.println("Overall Lee ATK = " + LeeATK);
         System.out.println("Overall Ming ATK = " + MingATK);
