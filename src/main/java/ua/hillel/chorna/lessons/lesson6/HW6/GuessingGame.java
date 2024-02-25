@@ -11,12 +11,17 @@ public class GuessingGame {
         System.out.println("I picked a number between 0 and 10. Which is it? You can guess 5 times.");
         for (int i = 0; i < guesses; i++) {
             System.out.print("Enter your guess: ");
-            int guess = scanner.nextInt();
-            if (guess == randNumber) {
-                System.out.println("Correct! You won!");
-                return;
+            if (scanner.hasNextInt()) {
+                int guess = scanner.nextInt();
+                if (guess == randNumber) {
+                    System.out.println("Correct! You won!");
+                    return;
+                } else {
+                    System.out.println("Wrong!");
+                }
             } else {
-                System.out.println("Wrong!");
+                System.out.println("Wrong data! Please, enter a number!");
+                scanner.next();
             }
         }
         if (!correctGuess) {
