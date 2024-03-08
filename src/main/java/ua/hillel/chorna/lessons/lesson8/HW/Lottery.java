@@ -9,20 +9,20 @@ public class Lottery {
             lotteryNo[i] = (int) (Math.random() * 10);
         }
         for (int i = 0; i < 6; i++) {
-            for (int k = i + 1; k < 7; k++) {
-                if (playerNo[i] > playerNo[k]) {
+            for (int j = i + 1; j < 7; j++) {
+                if (playerNo[i] > playerNo[j]) {
                     int sort = playerNo[i];
-                    playerNo[i] = playerNo[k];
-                    playerNo[k] = sort;
+                    playerNo[i] = playerNo[j];
+                    playerNo[j] = sort;
                 }
             }
         }
         for (int i = 0; i < 6; i++) {
-            for (int k = i + 1; k < 7; k++) {
-                if (lotteryNo[i] > lotteryNo[k]) {
+            for (int j = i + 1; j < 7; j++) {
+                if (lotteryNo[i] > lotteryNo[j]) {
                     int sort = lotteryNo[i];
-                    lotteryNo[i] = lotteryNo[k];
-                    lotteryNo[k] = sort;
+                    lotteryNo[i] = lotteryNo[j];
+                    lotteryNo[j] = sort;
                 }
             }
         }
