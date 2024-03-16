@@ -1,6 +1,5 @@
 package ua.hillel.chorna.lessons.lesson10.HW;
 
-
 public class Person {
     String firstName;
     String lastName;
